@@ -8,3 +8,6 @@ venv/
 
 # Environment config
 .env
+
+# KEYS
+service_keys.json
