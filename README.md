@@ -59,6 +59,26 @@ After setup is complete, you can start the app with:
 python3 chat_interface.py
 ```
 
+### 6. Run the App with Live Index Updates
+
+To ensure that your app both serves chat responses and actively updates the Pinecone index:
+
+1. **Terminal 1** – Run the background index updater:
+
+   ```bash
+   python3 app.py
+   ```
+
+   This process watches for document changes and updates the Pinecone vector store accordingly.
+
+2. **Terminal 2** – Run the chat interface using Deepseek via Groq:
+
+   ```bash
+   python3 chat_interface.py
+   ```
+
+This dual-terminal setup allows for real-time indexing and responsive chat functionality.
+
 ---
 
 You're now ready to run and develop on the app!

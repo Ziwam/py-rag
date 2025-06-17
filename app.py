@@ -242,7 +242,7 @@ def poll_drive_folder():
   """
   try: 
     results = drive_service.files().list(
-      q=f"'{GOOGLE_DRIVE_FOLDER_ID}' in parents and trashed = false and mimeType = 'text/plain'",
+      q=f"'{GOOGLE_DRIVE_FOLDER_ID}' in parents and trashed = false",
       fields="files(id, name, modifiedTime)",
       supportsAllDrives=True,
       includeItemsFromAllDrives=True,
