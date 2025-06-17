@@ -55,7 +55,7 @@ def groq_chat(system_message: str, query: str, context: str) -> str:
   """
   Calls Groq's chat completion with a system message and users query
   """
-  client = Groq(api=GROQ_API_KEY)
+  client = Groq(api_key=GROQ_API_KEY)
 
   try:
     chat_completion = client.chat.completions.create(

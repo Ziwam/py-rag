@@ -155,7 +155,7 @@ def process_file(file: dict):
   
   # 2. Split
   chunks = split_text(content)
-  console.print(f"Split text into {len[chunks]} chunks.")
+  console.print(f"Split text into {len(chunks)} chunks.")
 
   # 3. Embed and Upsert
   vector_ids = []
